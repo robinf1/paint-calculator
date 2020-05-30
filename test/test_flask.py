@@ -45,3 +45,6 @@ class FlaskTestCase(unittest.TestCase):
         """
         result = self.app.get('a', content_type='html/text')
         self.assertEqual(result.status_code, 404)
+
+if __name__ == '__main__':
+    unittest.main()
