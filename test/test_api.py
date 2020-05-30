@@ -66,3 +66,6 @@ class APITestCase(unittest.TestCase):
         self.assertEqual(api.calculate_gallons_required(ft_room1), 6, "total gallons for room-1 (20,35,20) should be 6")
         self.assertEqual(api.calculate_gallons_required(ft_room2), 1, "total gallons for room-2 (20,20,20) should be 1")
         self.assertEqual(api.calculate_gallons_required(ft_room3), 14, "total gallons for room-3 (25,35,45) should be 14")
+
+if __name__ == '__main__':
+    unittest.main()
