@@ -52,6 +52,7 @@ class APITestCase(unittest.TestCase):
         """
         room1 = {'length':20,'width':35,'height':20}
         room2 = {'length':10,'width':10,'height':10}
+        room3 = {'length':25,'width':35,'height':45}
 
         ft_room1 = {}
         ft_room1['ft'] = api.calculate_feet(room1)
@@ -59,5 +60,9 @@ class APITestCase(unittest.TestCase):
         ft_room2 = {}
         ft_room2['ft'] = api.calculate_feet(room2)
 
+        ft_room3 = {}
+        ft_room3['ft'] = api.calculate_feet(room3)
+
         self.assertEqual(api.calculate_gallons_required(ft_room1), 6, "total gallons for room-1 (20,35,20) should be 6")
         self.assertEqual(api.calculate_gallons_required(ft_room2), 1, "total gallons for room-2 (20,20,20) should be 1")
+        self.assertEqual(api.calculate_gallons_required(ft_room3), 14, "total gallons for room-2 (20,20,20) should be 14")
