@@ -1,7 +1,6 @@
 import unittest
 from paint_calculator.run import app
 
-
 class FlaskTestCase(unittest.TestCase):
     def setUp(self):
         app.testing = True
@@ -41,5 +40,8 @@ class FlaskTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 405, "Response should return 405")
 
     def test_invalid_page(self):
+        """
+        Tests that invalid pages return 404 errors
+        """
         result = self.app.get('a', content_type='html/text')
         self.assertEqual(result.status_code, 404)
