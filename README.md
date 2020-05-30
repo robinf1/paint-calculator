@@ -54,3 +54,26 @@ The whole test suite can be run from the root project directory by:
 * `python3 -m nose2`
 
 nose2 also has the `--verbose` optional tag to see the list of tests run
+
+There are two test files, one testing the flask routes and one testing the api.
+
+To run each test file seperately:
+
+1. Access the virtual environment
+* `source env/bin/activate`
+
+2. Install dependencies and modules
+* `pip3 install -e .`
+
+3. Run test_flask.py
+* `python3 test/test_flask.py`
+
+or
+
+3. Run test_api.py
+* `python3 test/test_api.py`
+
+Both `python3 test/test_{module}.py` tests have an optional verbosity option 
+* `python3 test/test_flask.py -v`
+
+More information of testing can be found in TESTPLAN.md
