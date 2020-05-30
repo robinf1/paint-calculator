@@ -37,7 +37,7 @@ def calculate_gallons_required(formatted_data):
     :param formatted_data: An integer for the number of feet required to paint
     :return: feet / paint coverage, rounded up
     """
-    return math.floor(formatted_data['ft'] / 350)
+    return math.ceil(formatted_data['ft'] / 400)
 
 
 def sanitize_input(input):
