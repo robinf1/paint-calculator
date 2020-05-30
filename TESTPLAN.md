@@ -61,3 +61,14 @@ Using python's installed coverage.py module:
 
 4. Run coverage report
 * `coverage report`
+
+## Problems Encountered
+I had a bit of trouble at first on getting the app itself to run, but after moving the config.py file it worked.
+
+I was doing a lot of code outside of a virtual environment, then I decided to change everything to a virtual environment. I added the virtual environment in the repo, so that all dependencies and modules that were needed for testing were already available for anybody's machine.
+
+I also had a little trouble with getting to use flask's test_client() function. I didn't realize that I was importing the incorrect module of the app. After looking at each of the files in the app and seeing what gets requested in certain actions of the app, I started to understand the app more.
+
+I didn't get to test all of the things I wanted for the flask app. I wanted to see if I would be able to see the contents of result, but I realized that I couldn't see all of the information if I just called for post('results',...). Because when you press the "See Results" button, it makes a call to /api/v4/calculate. So I decided to just test the api functions seperately.
+
+This was a fun exercise that allowed me to familiarize myself with python and some features of its testing suite.
