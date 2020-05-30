@@ -46,4 +46,11 @@ To make it easier on everybody, it's best if we use a PR to diff what work was c
 
 ## Running Tests
 
-Write instructions for how a user executes the automated tests you created.
+The whole test suite can be run from the root project directory by:
+
+1. Access virtual environment
+* `source env/bin/activate`
+2. Run all programs 
+* `python3 -m nose2`
+
+nose2 also has the `--verbose` optional tag to see the list of tests run
