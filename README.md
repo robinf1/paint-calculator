@@ -76,4 +76,4 @@ or
 Both `python3 test/test_{module}.py` tests have an optional verbosity option 
 * `python3 test/test_flask.py -v`
 
-More information of testing can be found in TESTPLAN.md
+More information of testing (including coverage) can be found in TESTPLAN.md
