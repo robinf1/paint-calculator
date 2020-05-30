@@ -46,3 +46,18 @@ or
 
 Both `python3 test/test_{module}.py` tests have an optional verbosity option 
 * `python3 test/test_flask.py -v`
+
+## Coverage
+Using python's installed coverage.py:
+
+1. Access the virtual environment
+* `source env/bin/activate`
+
+2. Install dependencies and modules
+* `pip3 install -e .`
+
+3. Run coverage with test file
+* `coverage run --source paint_calculator test/test_api.py`
+
+4. Run coverage report
+* `coverage report`
