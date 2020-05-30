@@ -28,7 +28,7 @@ def calculate_feet(formatted_data):
     :param formatted_data: dict of L/W/H information
     :return: integer for the number of feet required by performing `((Length * 2) + (Width * 2)) * Height`
     """
-    return int(formatted_data['length']) * int(formatted_data['width']) * int(formatted_data['height'])
+    return ((2*int(formatted_data['length'])) + (2*int(formatted_data['width']))) * int(formatted_data['height'])
 
 
 def calculate_gallons_required(formatted_data):
