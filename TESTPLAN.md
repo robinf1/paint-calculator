@@ -48,7 +48,7 @@ Both `python3 test/test_{module}.py` tests have an optional verbosity option
 * `python3 test/test_flask.py -v`
 
 ## Coverage
-Using python's installed coverage.py:
+Using python's installed coverage.py module:
 
 1. Access the virtual environment
 * `source env/bin/activate`
